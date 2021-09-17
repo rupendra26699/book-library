@@ -1,0 +1,237 @@
+{
+  "NewUsers": [
+    {
+      "fullname": "rupendra",
+      "email": "rupendra26699@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "check": true,
+      "id": 1
+    },
+    {
+      "fullname": "sunny",
+      "email": "sunny@gmail.com",
+      "password": "09876",
+      "confirmpassword": "09876",
+      "check": true,
+      "id": 2
+    },
+    {
+      "fullname": "Raju",
+      "email": "raju123@gmail.com",
+      "password": "1234567890",
+      "confirmpassword": "1234567890",
+      "check": true,
+      "id": 3
+    },
+    {
+      "fullname": "akash",
+      "email": "kingindia@gmail.com",
+      "password": "redakai",
+      "confirmpassword": "redakai",
+      "check": true,
+      "id": 4
+    },
+    {
+      "fullname": "kalu",
+      "email": "kalu@gmail.com",
+      "password": "12345",
+      "confirmpassword": "12345",
+      "check": true,
+      "id": 5
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 6
+    },
+    {
+      "fullname": "",
+      "email": "rupendra26699@gmail.com",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 7
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 8
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 9
+    },
+    {
+      "fullname": "rupendra",
+      "email": "rupendra.mathuria@oit.com",
+      "password": "9555053995",
+      "confirmpassword": "9555053995",
+      "check": true,
+      "id": 10
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 11
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 12
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 13
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 14
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 15
+    },
+    {
+      "fullname": "red",
+      "email": "eweeew",
+      "password": "dddd",
+      "confirmpassword": "dddd",
+      "check": true,
+      "id": 16
+    },
+    {
+      "fullname": "reee",
+      "email": "rupendra26699@gmail.com",
+      "password": "2112",
+      "confirmpassword": "2121",
+      "check": "",
+      "id": 17
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 18
+    },
+    {
+      "fullname": "sad",
+      "email": "ewe",
+      "password": "weewe",
+      "confirmpassword": "weweew",
+      "check": true,
+      "id": 19
+    },
+    {
+      "fullname": "ewew",
+      "email": "rupendra26699@gmail.com",
+      "password": "ewewew",
+      "confirmpassword": "ewewew",
+      "check": true,
+      "id": 20
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "check": "",
+      "id": 21
+    },
+    {
+      "fullname": "red",
+      "email": "rupendra26699@gmail.com",
+      "password": "12345",
+      "confirmpassword": "12345",
+      "check": true,
+      "id": 22
+    },
+    {
+      "fullname": "kalu",
+      "email": "fera@gmial.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 23
+    }
+  ],
+  "Books": [
+    {
+      "BookName": "programming in c",
+      "BookPrice": "100",
+      "Author": "S. chandra",
+      "Published": "12-02-1987",
+      "BookType": "study",
+      "Quantity": "12",
+      "Status": "available",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "BookName": "dfsd",
+      "BookPrice": "232",
+      "Author": "vfvf",
+      "Published": "12-2-14",
+      "BookType": "ref",
+      "Quantity": "wswqs",
+      "Status": ""
+    },
+    {
+      "BookName": "mathematics",
+      "BookPrice": "123",
+      "Author": "rd sharma",
+      "Published": "2011022",
+      "BookType": "study",
+      "Quantity": "12",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "BookName": "ddcdc",
+      "BookPrice": "c21",
+      "Author": "21",
+      "Published": "212",
+      "BookType": "21",
+      "Quantity": "98",
+      "Status": "11"
+    },
+    {
+      "BookName": "vffv",
+      "BookPrice": "fvfv",
+      "Author": "fvf",
+      "Published": "vfvfv",
+      "BookType": "fvfvf",
+      "Quantity": "vf",
+      "id": 8
+    }
+  ]
+}

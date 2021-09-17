@@ -1,0 +1,81 @@
+
+    <h1>Welcome to Book Library</h1>
+
+<div class="container">
+    
+  <form [formGroup]="signupForm" (ngSubmit) = "signup()">
+      
+    <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">Full Name</label>
+        <input type="email" class="form-control"  formControlName="fullname">
+ 
+            <div style = " height: 40px;padding: 2px;" class="alert alert-danger" *ngIf="!f.fullname.valid && f.fullname.touched">
+                  <span *ngIf="f.fullname.errors?.required "> * Please enter your name</span>
+                  <span *ngIf="f.fullname.errors?.minlength">* Name should be atleast 3 characters long</span>
+                  <span *ngIf="f.fullname.errors?.pattern">* Only alphabets are allowed </span>
+            </div>
+       
+    </div>
+         
+   
+       
+    <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" formControlName="email" >
+
+          <div style = " height: 43px;padding: 2px;" class="alert alert-danger" *ngIf="!f.email.valid && f.email.touched">
+            <span *ngIf="f.email.errors?.required "> * Please enter your Email</span>
+            <span *ngIf="f.email.errors?.email">* Please Enter valid email address <br></span>
+            <span *ngIf="f.email.errors?.minlength">* Email length should not be less than 6 characters</span> 
+      </div>
+
+    </div>
+  
+    <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control"  formControlName="password">
+
+          <div  style = " height: 40px;padding: 2px;" class="alert alert-danger" *ngIf="!f.password.valid && f.password.touched">
+            <span *ngIf="f.password.errors?.required "> * Password is required</span>
+            <span *ngIf="f.password.errors?.maxlength">* Password length should not be greater than 8 characters</span>
+            <span *ngIf="f.password.errors?.minlength">* Password length should not be less than 5 characters</span> <br>
+          </div>
+
+    </div>
+
+    <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control"  formControlName="confirmpassword">
+
+          <div  style = " height: 40px;padding: 2px;" class="alert alert-danger" *ngIf="!f.confirmpassword.valid && f.confirmpassword.touched">
+            <span *ngIf="f.confirmpassword.errors?.required "> * Confirm Password is required</span>
+          </div>
+
+    </div>
+
+    <!-- <div class="mb-3 form-check">
+          <small><input type="checkbox" class="form-check-input"  formControlName="check"></small>
+          <label class="form-check-label" ><small> I agree to the Terms & Condition</small></label>
+    </div>-->
+    <br> 
+        
+    
+    
+    
+    <button type="submit" class="btn btn-primary" [disabled]= "!signupForm.valid" >Sign Up / Create Account</button>
+</form><br>
+
+
+</div>
+
+<div class="registered"> 
+     <small>Already have an account </small>
+     <a [routerLink]="['/login']"> Sign In</a>
+     <small> instead? </small>
+ </div>
+
+   
+<p>
+      {{signupForm.status}}
+</p>
+

@@ -1,0 +1,74 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <span class="navbar-brand">
+      <div class="navigation">
+        <img src="..\assets\librarylogo.jpeg" width="35"  height="28"class="d-inline-block align-text-top"/>
+        
+        Book Library
+
+        <a class="navbar-brand" [routerLink]="['/dashboard']">Dashboard</a>
+
+        <a class="navbar-brand"   [routerLink]="['/addBook']">Add Book</a>
+      <span class="righticons">
+        {{loggedin_user | uppercase}}
+      </span>
+      <span class="uname">
+        {{ username }}
+      </span>
+
+        <button class="btn btn-danger logout" (click)="logout()">Logout</button>
+
+        
+
+
+      </div>
+      
+    </span>
+  </div>
+</nav>
+<!-- Button trigger modal -->
+
+
+  <div class="add mx-5 mt-3 mb-3">
+       <button type="button" class="btn btn-secondary" (click)= "onadd()">  Add Book  </button>
+  </div>
+
+
+<div class="container mt-5 mx-5">
+  <table class="table" >
+    <thead>
+      <tr>
+      
+        <th scope="col">Book Name</th>
+        <th scope="col">Book Price</th>
+        <th scope="col">Author Name</th>
+        <th scope="col">Published</th>
+        <th scope="col">Book Type</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Status</th>
+        <th scope="col" style="text-align: center;">Action</th>
+      </tr>
+      <tr *ngFor="let item of books">
+       
+        <td>{{item.BookName}}</td>
+        <td>{{item.BookPrice}}</td>
+        <td>{{item.Author}}</td>
+        <td>{{item.Published | date}}</td>
+        <td>{{item.BookType}}</td>
+        <td>{{item.Quantity}}</td>
+        <td>{{status}}</td>
+        <td class="action">
+          <button class="btn btn-secondary"(click)="onedit(item)" >edit</button>
+          
+          <button class="btn btn-secondary" (click) ="delete(item)">delete</button>
+        </td>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+
+
+
+ 

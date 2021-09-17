@@ -1,0 +1,43 @@
+<div>
+  <h1>Welcome to Book Library</h1>
+</div>
+
+
+
+  <div class="container">
+      <form [formGroup]="loginForm" novalidate>
+          <div class="mb-3">
+            <label class="form-label">User Id</label>
+            <input type="email" class="form-control" formControlName="email">
+            
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" formControlName="password">
+            <div  style = " height: 40px;padding: 2px;" class="alert alert-danger" *ngIf="!f.password.valid && f.password.touched">
+              <span *ngIf="f.password.errors?.required "> * Password is required</span>
+  
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" (click)= login(loginForm.value)>Sign In / Login</button>
+         
+         
+         
+        </form><br>
+        <div class="new"> 
+          <small>Don't have an account 
+          <a [routerLink]="['/signup']"> Create an Account </a> instead? </small>
+          
+      </div>
+        
+    
+      
+  </div>
+  
+  
+  
+
+  
+  
+  

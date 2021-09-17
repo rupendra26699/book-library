@@ -1,0 +1,53 @@
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand">
+        <div class="navigation">
+          <img
+            src="..\assets\librarylogo.jpeg"
+            width="35"
+            height="28"
+            class="d-inline-block align-text-top"
+          />
+          &nbsp; Book Library
+  
+          <a class="navbar-brand" [routerLink]="['/dashboard']">Dashboard</a>
+  
+          <a class="navbar-brand"   [routerLink]="['/addBook']">Add Book</a>
+  
+          
+  
+        </div>
+      </span>
+    </div>
+  </nav>
+
+  <div class="alert alert-warning mx-3 mt-3" role="alert" *ngIf="check">
+    There is no any changes in data
+  </div>
+  
+  
+  <div class="container mt-3 mb-3" style="width:600px">
+  
+        <form [formGroup]="form" class="mb-3" (ngSubmit)="updateBook()">
+          
+          <label> Book Name</label>
+          <input class="form-control" formControlName="BookName"  type="text"><br>
+          <label> Book Price</label>
+          <input  class="form-control" formControlName="BookPrice" type="text"><br>
+          <label> Author</label>
+          <input  class="form-control" formControlName="Author" type="text"><br>
+          <label> Published</label>
+          <input  class="form-control" formControlName="Published" type="text"><br>
+          <label> BookType</label>
+          <input class="form-control"  formControlName="BookType" type="text"><br>
+          <label> Quantity</label>
+          <input  class="form-control" formControlName="Quantity" type="text"><br>
+         
+        </form>
+  
+        <div class="container" >
+          <button type="button" class="btn btn-primary" (click)="updateBook()" style="margin-left: 220px;">Update Book</button>
+        </div>
+  </div>
+  
+  

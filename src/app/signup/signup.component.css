@@ -1,0 +1,28 @@
+.container{
+    margin: 5px 425px;
+    width: auto; 
+    height: auto;
+    border: 2px solid rgb(34, 114, 168);
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-color: aliceblue;
+
+}
+h1{
+    text-align: center;
+    margin-top: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+.registered{
+       margin-left: 560px;
+       margin-top: 10px;
+       width: 270px; 
+} 
+
+.error{
+    color: rgb(163, 39, 39);
+}
+.form-control{
+    height: 30px
+}

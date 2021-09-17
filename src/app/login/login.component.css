@@ -1,0 +1,27 @@
+.container{
+    margin: 30px 430px;
+    text-align: left;
+    width: 470px; 
+    height: auto;
+    border: 2px solid rgb(34, 114, 168);
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    margin-top: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+.form-control{
+    width: 450px;
+}
+.new{
+    width: 450px; 
+    text-align: center;
+       margin-left: 85px;
+       text-align: left;
+       margin-right: 10px;
+       margin-top: 20px;
+}
